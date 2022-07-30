@@ -7,4 +7,4 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(token);
+client.login(process.env.token);
