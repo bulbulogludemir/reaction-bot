@@ -6,4 +6,8 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+if (message.content.startsWith('*')) {
+	message.react(':haha:');
+};
+
 client.login(process.env.key);
