@@ -6,6 +6,10 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+if (message.content === '!ping') {
+	message.channel.send('Pong!');
+};
+
 if (message.content.startsWith('*')) {
 	message.react(':haha:');
 };
